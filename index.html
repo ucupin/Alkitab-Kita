@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alkitab Kita</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h1>Alkitab Kita</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Tentang Alkitab Kita -->
+    <div class="about-container">
+      <h2>Tentang Alkitab Kita</h2>
+      <p>Alkitab Kita adalah platform pencarian ayat Alkitab yang dirancang untuk membantu kamu menemukan Firman Tuhan dengan cepat dan mudah, kapan saja dan di mana saja. Dengan tampilan modern, fitur pencarian cerdas, dan pengalaman pengguna yang nyaman, Alkitab Kita hadir sebagai teman rohani digital yang menemanimu dalam merenungkan dan memahami isi Alkitab secara mendalam.</p>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Cari Ayat...">
+      <button onclick="searchVerse()">Cari</button>
+    </div>
+
+    <!-- Fitur Website Alkitab Kita -->
+    <div class="features-container">
+      <div class="feature">
+        <h3>Pencarian Ayat Alkitab Berdasarkan Kata Kunci</h3>
+        <p>Temukan ayat-ayat Alkitab dengan mudah menggunakan kata kunci tertentu yang relevan dengan pencarian Anda.</p>
+      </div>
+      <div class="feature">
+        <h3>Pencarian Ayat Alkitab Berdasarkan Emosi</h3>
+        <p>Carilah ayat yang menguatkan atau menghibur hati Anda berdasarkan emosi yang sedang Anda rasakan.</p>
+      </div>
+      <div class="feature">
+        <h3>Pencarian Ayat Alkitab Berdasarkan Karakter Alkitab</h3>
+        <p>Temukan ayat-ayat yang berhubungan dengan karakter-karakter penting dalam Alkitab untuk mendalami kehidupan mereka.</p>
+      </div>
+    </div>
+
+    <!-- Topik -->
+    <div class="topics-container">
+      <h3>Topik:</h3>
+      <div class="topics">
+        <div class="topic">Kasih</div>
+        <div class="topic">Harapan</div>
+        <div class="topic">Damai</div>
+        <div class="topic">Kegelisahan</div>
+        <div class="topic">Amarah</div>
+        <div class="topic">Depresi</div>
+        <div class="topic">Ketakutan</div>
+        <div class="topic">Godaan</div>
+        <div class="topic">Kesabaran</div>
+        <div class="topic">Sukacita</div>
+      </div>
+    </div>
+
+    <!-- Karakter Alkitab -->
+    <div class="characters-container">
+      <h3>Karakter Alkitab:</h3>
+      <div class="character">
+        <h4>Musa</h4>
+        <p>Pemimpin besar bangsa Israel yang membebaskan mereka dari perbudakan di Mesir dan menerima Sepuluh Perintah Allah di Gunung Sinai.</p>
+      </div>
+      <div class="character">
+        <h4>Daud</h4>
+        <p>Raja Israel yang terkenal karena keberaniannya mengalahkan Goliat, hatinya yang berkenan kepada Tuhan, dan sebagai penulis banyak Mazmur.</p>
+      </div>
+      <div class="character">
+        <h4>Abraham</h4>
+        <p>Bapa orang beriman, yang dikenal karena imannya yang besar kepada Allah dan menjadi awal dari bangsa Israel melalui perjanjian Allah.</p>
+      </div>
+      <div class="character">
+        <h4>Paulus</h4>
+        <p>Rasul yang dulunya penganiaya orang Kristen, tetapi kemudian bertobat dan menjadi salah satu penyebar utama Injil ke berbagai bangsa, penulis banyak surat dalam Perjanjian Baru.</p>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-container" id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq" onclick="toggleAnswer(0)">
+        <p>Apa itu Alkitab Kita?</p>
+        <p class="answer" id="answer0">Alkitab Kita adalah website pencarian ayat Alkitab yang memudahkan pengguna menemukan ayat berdasarkan kata kunci tertentu, menggunakan teknologi pencarian cerdas.</p>
+      </div>
+      <div class="faq" onclick="toggleAnswer(1)">
+        <p>Apakah ayat yang ditampilkan berasal dari versi tertentu?</p>
+        <p class="answer" id="answer1">Ya, ayat-ayat yang tersedia berasal dari versi Terjemahan Baru (TB) yang umum digunakan di Indonesia.</p>
+      </div>
+      <div class="faq" onclick="toggleAnswer(2)">
+        <p>Apakah website ini bisa digunakan secara gratis?</p>
+        <p class="answer" id="answer2">Tentu, semua fitur di Alkitab Kita dapat digunakan secara gratis tanpa perlu login atau mendaftar.</p>
+      </div>
+      <div class="faq" onclick="toggleAnswer(3)">
+        <p>Bagaimana jika hasil pencarian tidak relevan?</p>
+        <p class="answer" id="answer3">Kami menggunakan metode pencocokan kata berbasis kemiripan. Jika hasil kurang relevan, coba gunakan kata lain atau frasa yang lebih spesifik.</p>
+      </div>
+      <div class="faq" onclick="toggleAnswer(4)">
+        <p>Bagaimana cara menghubungi tim Alkitab Kita?</p>
+        <p class="answer" id="answer4">Silakan hubungi kami melalui Instagram, LinkedIn, atau email yang tersedia di bagian bawah website.</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <p>© 2025 made by love</p>
+        <div class="social-media">
+          <a href="https://www.instagram.com/immanuel.yusuf" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/yusuf-immanuel/" target="_blank">LinkedIn</a>
+          <a href="mailto:ucupimanuel@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
